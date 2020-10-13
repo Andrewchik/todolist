@@ -18,8 +18,9 @@ addButton.addEventListener('click', function (params) {
     });
 
     function displayMessages() {
+        let displayMessage = '';
         todoList.forEach((item, i) => {
-            let displayMessage = `
+            displayMessage += `
             <li>
                 <input type = 'checkbox' id='item_${i}'>
                 <label for='item_${i}'>${item.todo}</label>
