@@ -10,8 +10,13 @@ if(localStorage.getItem('todo')){
     displayMessages()
 }
 
-addButton.addEventListener('click', function (params) {
 
+
+addButton.addEventListener('click', function () {
+
+    if (addMessage.value == '') {
+        alert('Введіть завдання!')
+    } else {
         let newTodo = {
             todo: addMessage.value,
             checked: false,
@@ -19,8 +24,11 @@ addButton.addEventListener('click', function (params) {
         };
 
         todoList.push(newTodo)
+    
         displayMessages()
         localStorage.setItem('todo', JSON.stringify(todoList))
+    }
+       
      
     });
 
@@ -36,4 +44,5 @@ addButton.addEventListener('click', function (params) {
             
            todo.innerHTML = displayMessage
         })
+
     }
