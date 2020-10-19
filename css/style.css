@@ -49,3 +49,35 @@ input[type=text] {
     display: block;
     cursor: pointer;
 }
+
+.wrapper {
+    max-width: 520px;
+
+    margin: 0 auto;
+}
+
+.todo {
+    font-size: 28px;
+    line-height: 44px;
+    margin: 0 auto;
+    text-align: start;
+    
+}
+.create_new_todo{
+    margin: 0px 0px 50px 0px;
+}
+
+
+input[type=checkbox]:checked + label{
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 15px;
+	color: #ffffff;
+	text-align: center;
+    line-height: 15px;
+  
+}
+
+.select {
+    
+}

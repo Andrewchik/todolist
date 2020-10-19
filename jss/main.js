@@ -27,6 +27,7 @@ addButton.addEventListener('click', function () {
     
         displayMessages()
         localStorage.setItem('todo', JSON.stringify(todoList))
+        addMessage.value = ''
     }
        
      
@@ -40,6 +41,23 @@ addButton.addEventListener('click', function () {
                 <input type = 'checkbox' id='item_${i}' ${item.checked ? 'checked' : ''}>
                 <label for='item_${i}'>${item.todo}</label>
             </li>
+            <select size = "1">
+	            <option>9:00</option>
+	            <option>10:00</option>
+	            <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+                <option>23:00</option>
+            </select>
             `
             
            todo.innerHTML = displayMessage
