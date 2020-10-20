@@ -57,6 +57,7 @@ input[type=text] {
 }
 
 .todo {
+    padding: 10px;
     font-size: 28px;
     line-height: 44px;
     margin: 0 auto;
@@ -68,15 +69,6 @@ input[type=text] {
 }
 
 
-input[type=checkbox]:checked + label{
-	content: "\2713";
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-	font-size: 15px;
-	color: #ffffff;
-	text-align: center;
-    line-height: 15px;
-  
-}
 
 @media screen and (min-width: 320px) {
     .create_new_todo button {
