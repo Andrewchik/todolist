@@ -39,10 +39,10 @@ addButton.addEventListener('click', function () {
             displayMessage += `
             <li>
                 <input type = 'checkbox'  id='item_${i}' ${item.checked ? 'checked' : ''}>
-                <label for='item_${i}'>${item.todo}</label>
+                <label style = "font-size: 20px;" for='item_${i}'>${item.todo}</label>
             </li>
            
-            <select size = "1">
+            <select size = "1" >
             <option>0:00</option>
             <option>1:00</option>
             <option>2:00</option>
@@ -68,6 +68,7 @@ addButton.addEventListener('click', function () {
                 <option>22:00</option>
                 <option>23:00</option>
             </select>
+            <hr>
             `
             
            todo.innerHTML = displayMessage
