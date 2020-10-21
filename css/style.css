@@ -41,21 +41,35 @@ h1 {
     border-radius: 10px;
     box-shadow: 0px 2px 10px 0px;
 }
-.create_new_todo{
-    text-align: center;
-}
+
 input[type=text] {
     width: 376px;
     padding: 10px;
     margin: 0px 0px 20px 0px;
 }
+.buttons {
+    display: flex;
+    
+    
+}
 
-.create_new_todo button {
-    margin: 0px auto;
+.add {
+    flex: 2;
+   margin: 0px 10px 0px 0px;
+   
+}
+ .addNew {
+    flex: 1;
+    margin: 0px 0px 0px 10px;
+}
+.buttons button {
+    
     width: 400px;
     padding: 10px;
     display: block;
     cursor: pointer;
+    text-align: center;
+  
 }
 
 input[type="checkbox"] {
@@ -79,7 +93,7 @@ input[type="checkbox"] {
     
 }
 .create_new_todo{
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 15px 0px;
 }
 
 
@@ -94,7 +108,7 @@ input[type="checkbox"] {
     }
 
     input[type=text] {
-        width: 255px;
+        width: 257px;
         padding: 10px;
         margin: 0px 0px 20px 0px;
     }
@@ -154,7 +168,7 @@ input[type="checkbox"] {
     }
 
     input[type=text] {
-        width: 300px;
+        width: 316px;
         padding: 10px;
         margin: 0px 0px 20px 0px;
     }
