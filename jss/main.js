@@ -1,7 +1,11 @@
 let addMessage = document.querySelector('.message')
 let addButton = document.querySelector('.add')
 let todo = document.querySelector('.todo')
-let newList = document.querySelector('.addNew')
+let newList = document.querySelector('#modalWin')
+let modal = document.querySelector('.modal')
+let modal_No = document.querySelector('#modalNo')
+let modal_Yes = document.querySelector('#modalYes')
+
 
 let todoList = []
 
@@ -37,7 +41,7 @@ addButton.addEventListener('click', function () {
     })
 
 
-    newList.addEventListener('click', function(){
+    modalWin.addEventListener('click', function(){
        
             // localStorage.removeItem('todo')
         
@@ -85,3 +89,18 @@ addButton.addEventListener('click', function () {
         })
 
     }
+
+    // Modal Wnidow
+
+    newList.addEventListener('click', function() {
+        modal.style.display = 'block'
+    })
+    modal_No.addEventListener('click', function() {
+        modal.style.display = 'none'
+    })
+
+    window.addEventListener('click', function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none'
+        }
+    })
