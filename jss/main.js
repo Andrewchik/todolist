@@ -35,10 +35,8 @@ addButton.addEventListener('click', function () {
         displayMessages()
         localStorage.setItem('todo', JSON.stringify(todoList))
         addMessage.value = ''
-    }
-       
 
-    // ----------------------------------------TEXT ANIMATION-----------------------------------------------------------------
+// ----------------------------------------TEXT ANIMATION-----------------------------------------------------------------
 
 
 const paper=document.querySelector('h1');
@@ -50,13 +48,16 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
 
 // ----------------------------------------------------------------------------------------------------------
+    }
+       
      
     })
 
 
-    modalWin.addEventListener('click', function(){
+    modal_Yes.addEventListener('click', function(){
        
-            // localStorage.removeItem('todo')
+            localStorage.removeItem('todo')
+            location.reload()
         
     })
 
