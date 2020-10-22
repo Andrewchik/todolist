@@ -198,6 +198,12 @@ input[type="checkbox"] {
         font-size: 20px;
     }
 }
+@media screen and (max-width: 500px) {
+
+.todo_list h1 {
+    font-size: 23px;
+}
+}
 
 @media screen and (min-width: 360px) {
 
@@ -224,6 +230,7 @@ input[type="checkbox"] {
         border-radius: 10px;
         box-shadow: 0px 2px 10px 0px;
     }
+  
 }
 
 @media screen and (min-width: 375px) {
