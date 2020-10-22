@@ -37,6 +37,19 @@ addButton.addEventListener('click', function () {
         addMessage.value = ''
     }
        
+
+    // ----------------------------------------TEXT ANIMATION-----------------------------------------------------------------
+
+
+const paper=document.querySelector('h1');
+const text=paper.innerText.split('');
+const t='<span>'+text.join('</span><span>')+'</span>';
+paper.innerHTML=t;
+let i=0;
+setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style.color='red'; i++}}, 100)
+
+
+// ----------------------------------------------------------------------------------------------------------
      
     })
 
@@ -104,3 +117,6 @@ addButton.addEventListener('click', function () {
             modal.style.display = 'none'
         }
     })
+
+
+
