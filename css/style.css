@@ -40,6 +40,7 @@ h1 {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px 0px;
+    
 }
 
 
@@ -196,7 +197,7 @@ input[type="checkbox"] {
         background: #2154321c;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: 0px 2px 10px 0px;
+        box-shadow: 0px 24px 50px 2px;
     }
 }
 
@@ -237,7 +238,7 @@ input[type="checkbox"] {
         background: #2154321c;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: 0px 2px 10px 0px;
+        box-shadow: 0px 24px 50px 2px;
     }
   
 }
@@ -264,6 +265,6 @@ input[type="checkbox"] {
         background: #2154321c;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: 0px 2px 10px 0px;
+        box-shadow: 0px 24px 50px 2px;
     }
 }
