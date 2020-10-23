@@ -88,6 +88,7 @@ input[type="checkbox"] {
 }
 
 .todo {
+  
     padding: 10px;
     font-size: 28px;
     line-height: 44px;
@@ -115,7 +116,7 @@ input[type="checkbox"] {
 }
 
 .modal__content{
-    margin: 300px auto;
+    margin: 200px auto;
     background-color: #fff;
     padding: 20px;
     width: 60%;
@@ -123,6 +124,13 @@ input[type="checkbox"] {
     z-index: 99999;
 }
 
+
+.todo .selects  {
+    display: flex;
+    margin: 0px 10px;
+    justify-content: flex-end;
+
+}
 
 
 

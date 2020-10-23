@@ -48,6 +48,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
 
 // ----------------------------------------------------------------------------------------------------------
+    // console.log(todoList);
     }
        
      
@@ -58,7 +59,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
        
             localStorage.removeItem('todo')
             location.reload()
-        
+            // console.log(todoList);
     })
 
     function displayMessages() {
@@ -69,7 +70,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
                 <input type = 'checkbox'  id='item_${i}' ${item.checked ? 'checked' : ''}>
                 <label style = "font-size: 20px;" for='item_${i}'>${item.todo}</label>
             </li>
-           
+           <div class = "selects">
             <select id = "time" size = "1" >
             <option>0:00</option>
             <option>1:00</option>
@@ -96,6 +97,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
             <option>22:00</option>
             <option>23:00</option>
             </select>
+            </div>
             <hr>
             `
             
