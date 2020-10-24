@@ -106,6 +106,29 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
     }
 
+    todo.addEventListener('change', function (event) {
+       let idInput = event.target.getAttribute('id')
+       let valueLabel = todo.querySelector('[for='+ idInput + ']').innerHTML
+      
+       todoList.forEach(function (item) {
+           if(item.todo == valueLabel){
+               item.checked = !item.checked
+               localStorage.setItem('todo', JSON.stringify(todoList))
+           }
+
+        //    if (item.checked) {
+        //     idInput.style.cssText = 'text-decoration: line-through;'
+        // }
+       })
+    })
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // Modal Wnidow
 
     newList.addEventListener('click', function() {
