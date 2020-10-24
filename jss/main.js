@@ -5,6 +5,7 @@ let newList = document.querySelector('#modalWin')
 let modal = document.querySelector('.modal')
 let modal_No = document.querySelector('#modalNo')
 let modal_Yes = document.querySelector('#modalYes')
+const dateElement = document.querySelector('#date')
 
 
 let todoList = []
@@ -143,6 +144,13 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
             modal.style.display = 'none'
         }
     })
+
+    ///////////////////////Date///////////////////////////////
+     const options = {weekday: 'long', month: 'short', day: 'numeric'}
+    const today = new Date()
+    dateElement.innerHTML = today.toLocaleDateString("en-US", options)
+    
+    ///////////////////////////////////////////////////////////
 
 
 
