@@ -5,6 +5,7 @@ let newList = document.querySelector('#modalWin')
 let modal = document.querySelector('.modal')
 let modal_No = document.querySelector('#modalNo')
 let modal_Yes = document.querySelector('#modalYes')
+const dateElement = document.querySelector('#date')
 
 
 let todoList = []
@@ -27,7 +28,7 @@ addButton.addEventListener('click', function () {
         let newTodo = {
             todo: addMessage.value,
             checked: false,
-            important: false
+            time: 'none'
         };
 
         todoList.push(newTodo)
@@ -106,6 +107,29 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
     }
 
+    todo.addEventListener('change', function (event) {
+       let idInput = event.target.getAttribute('id')
+       let valueLabel = todo.querySelector('[for='+ idInput + ']').innerHTML
+      
+       todoList.forEach(function (item) {
+           if(item.todo == valueLabel){
+               item.checked = !item.checked
+               localStorage.setItem('todo', JSON.stringify(todoList))
+           }
+
+        //    if (item.checked) {
+        //     idInput.style.cssText = 'text-decoration: line-through;'
+        // }
+       })
+    })
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // Modal Wnidow
 
     newList.addEventListener('click', function() {
@@ -121,5 +145,9 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
         }
     })
 
-
-
+    ///////////////////////Date///////////////////////////////
+     const options = {weekday: 'long', month: 'short', day: 'numeric'}
+    const today = new Date()
+    dateElement.innerHTML = today.toLocaleDateString("en-US", options)
+    
+    ///////////////////////////////////////////////////////////
