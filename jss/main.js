@@ -150,4 +150,11 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
     const today = new Date()
     dateElement.innerHTML = today.toLocaleDateString("en-US", options)
     
+<<<<<<< HEAD
     ///////////////////////////////////////////////////////////
+=======
+    ///////////////////////////////////////////////////////////
+
+
+
+>>>>>>> ce1949abc81ba99ba81ef893f7b945168cd96590

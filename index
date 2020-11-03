@@ -1,0 +1,137 @@
+[33mcommit e727d8fedbf7b20b74d70fb9b931240747aaeb49[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Nov 3 17:18:14 2020 +0200
+
+    fix
+
+[33mcommit 610563e114922cd05cf4babaa35c003e78a432c4[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 16:26:24 2020 +0300
+
+    add shadow
+
+[33mcommit 6fce3ce4dff30da74afd2d75931d00c07c581096[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 16:16:17 2020 +0300
+
+    change bg color
+
+[33mcommit 0c8723124e0834ea9ea026cddc1f26c419a3cf9f[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 16:08:06 2020 +0300
+
+    select rigth
+
+[33mcommit b89b1d207f84d8d9f2ec70abd17f7052f98b67b4[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 02:23:32 2020 +0300
+
+    btn Yes is working
+
+[33mcommit d605762dfcbc5e2dab96525f5715ba557e304e38[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 02:09:14 2020 +0300
+
+    media change <h1>
+
+[33mcommit 19d693d53e4911e123c657ed16807901366e69a0[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Fri Oct 23 02:03:34 2020 +0300
+
+    Add anim on <h1>
+
+[33mcommit b77e74d5e8cc86c206b4ee1944f0f4bd713af43d[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Thu Oct 22 12:29:14 2020 +0300
+
+    media scroll down
+
+[33mcommit a6058ab68f323de024a8df9187cd3d91b3a3b290[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Thu Oct 22 01:15:20 2020 +0300
+
+    create Modal Window 1.0
+
+[33mcommit 338a46e43cdeed722276b0bcaf386d1b646c6279[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Thu Oct 22 00:29:41 2020 +0300
+
+    add new BTN and change design
+
+[33mcommit 834d27f2854cd34c8ac67f2fd6455d8ca6214a73[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Wed Oct 21 15:23:20 2020 +0300
+
+    font-size li and <hr>
+
+[33mcommit e78ddc759c14598ea37ee519aa223891b70ee357[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Wed Oct 21 01:08:07 2020 +0300
+
+    checkbox size and other
+
+[33mcommit 9d0d36a134923a1aa11cd5e1bd2148b94a608b29[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Wed Oct 21 00:16:08 2020 +0300
+
+    full winGradient in bg
+
+[33mcommit 9c0045bc4ae6b30e0b8be5f8566e33078caec2b6[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 20:15:24 2020 +0300
+
+    add gradient in bg
+
+[33mcommit 4720e8b13148a0cfa2dff1cca77bc95c234059f9[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 19:54:53 2020 +0300
+
+    delete testChecked
+
+[33mcommit 1cce1851aaa03dc26afbc7b6fddaeaccbfe93568[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 19:23:02 2020 +0300
+
+    NoScaleInPhone
+
+[33mcommit 3943ea42df58840a8e633c5009c75a8a2f5bded4[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 19:10:43 2020 +0300
+
+    add favicon
+
+[33mcommit a5aaba61795341884b0faf4f8888d2733ab2da39[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 18:22:12 2020 +0300
+
+    add adaptive(media)
+
+[33mcommit 583176336c9af8e2af2f866c475462fba4b43d36[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 20 01:48:59 2020 +0300
+
+    testFIVE Select(Time)
+
+[33mcommit 446d634ab2a0c5316e314b45ceb9ea9554614192[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Mon Oct 19 13:21:21 2020 +0300
+
+    4th commit(add if input = '')
+
+[33mcommit dfa5e845481bc14c159f54bb06970c773d68c6dc[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 13 15:57:08 2020 +0300
+
+    third commit list
+
+[33mcommit 15edff7f18d10bc69acc9d0701ddb9cb309620d6[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 13 15:32:58 2020 +0300
+
+    second commit list
+
+[33mcommit 09579ade7541bf7db8681036ee4ee905b2f81fbb[m
+Author: Andrewchik <andriy.goryachiy16@gmail.com>
+Date:   Tue Oct 13 15:19:58 2020 +0300
+
+    first commit list
