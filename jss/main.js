@@ -130,15 +130,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
     ///////////////////////////////////////////==JQuery Burger Menu!////////////////////////////////////////////////////////////////////////
 
-    $('.header-burger_menu').on('click', function (event) {
-        event.preventDefault(); // Page not reload
-        let btnBurgerMenu = $('.burger-menu_btn').toggleClass('active-menu')
-        let burgenMenu = $('.header-burger_menu').toggleClass('active-menu')
-
-    
-       
-
-    })
+   
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
