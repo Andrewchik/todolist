@@ -6,6 +6,7 @@ let modal = document.querySelector('.modal')
 let modal_No = document.querySelector('#modalNo')
 let modal_Yes = document.querySelector('#modalYes')
 const dateElement = document.querySelector('#date')
+const burgerBtn = document.querySelector('.burger-menu_btn')
 
 
 let todoList = []
@@ -69,6 +70,7 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
         let displayMessage = '';
         todoList.forEach(function(item, i){
             displayMessage += `
+            
             <li>
                 <input type = 'checkbox'  id='item_${i}' ${item.checked ? 'checked' : ''}>
                 <label style = "font-size: 20px;" for='item_${i}'>${item.todo}</label>
@@ -126,9 +128,17 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
     })
 
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////==JQuery Burger Menu!////////////////////////////////////////////////////////////////////////
 
-  
+    $('.header-burger_menu').on('click', function (event) {
+        event.preventDefault(); // Page not reload
+        let btnBurgerMenu = $('.burger-menu_btn').toggleClass('active-menu')
+        let burgenMenu = $('.header-burger_menu').toggleClass('active-menu')
+
+    
+       
+
+    })
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
