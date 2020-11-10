@@ -59,8 +59,8 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
     })
 
 
-    modal_Yes.addEventListener('click', function(){
-       
+    modal_Yes.addEventListener('click', function(e){
+            e.preventDefault()
             localStorage.removeItem('todo')
             location.reload()
             // console.log(todoList);
@@ -130,7 +130,30 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
 
     ///////////////////////////////////////////==JQuery Burger Menu!////////////////////////////////////////////////////////////////////////
 
-   
+    const sidebarBox = document.querySelector('#box'),
+    sidebarBtn = document.querySelector('#btn'),
+    pageWrapper = document.querySelector('.todo_list');
+
+sidebarBtn.addEventListener('click', event => {
+    sidebarBtn.classList.toggle('active');
+    sidebarBox.classList.toggle('active');
+});
+
+pageWrapper.addEventListener('click', event => {
+
+    if (sidebarBox.classList.contains('active')) {
+            sidebarBtn.classList.remove('active');
+            sidebarBox.classList.remove('active');
+    }
+});
+
+window.addEventListener('keydown', event => {
+
+    if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+            sidebarBtn.classList.remove('active');
+            sidebarBox.classList.remove('active');
+    }
+});
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

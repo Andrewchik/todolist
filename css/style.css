@@ -1,3 +1,6 @@
+
+
+
 li {
     list-style-type: none;
 }
@@ -161,68 +164,87 @@ label{
 
 /*Menu*/
 
-.header-nav {
-    margin-bottom: 40px;
+
     
-    }
-    
-    .header-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-inline-start: 0px
-    }
-    
-    .header-nav li {
-        display: block;
-        padding: 0 20px;
-        color: #fff;
-        font-size: 20px;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        transition: .5s;
-    }
-    
-    .header-nav li a {
-        color: #fff;
-        text-decoration: none;
-        transition: .5s;
-        padding: 10px;
-    }
-    
-    
-    .header-nav ul:hover li a {
-        filter: blur(5px);
-    }
-    
-    
-    .header-nav ul:hover li a:hover{
-        font-size: 30px;
-        filter: blur(0px);
-        /* background-color: #151403; */
-        border: 2px solid white;
-        border-radius: 40%;
-    }
-    
-    
-    
+#btn {
+    position: fixed;
+    z-index: 5;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+
+#btn div {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #00dffc;
+    transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms;
+}
+#btn.active {
+    left: 230px;
+}
+#btn.active div {
+    background-color: #343838;
+}
+#btn.active #top {
+    transform: translateY(10px) rotate(-135deg);
+}
+#btn.active #middle {
+    opacity: 0;
+    transform: rotate(135deg);
+}
+#btn.active #bottom {
+    transform: translateY(-10px) rotate(-45deg);
+}
+#box {
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 0px;
+    left: -275px;
+    width: 275px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    background-color: #f6f6f6;
+    color: #343838;
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+#box.active {
+    left: 0px;
+    opacity: 1;
+}
+#items {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#items .item {
+    position: relative;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 15px 30px;
+    transition: all 250ms;
+}
+#items .item:hover {
+    padding: 15px 45px;
+    background-color: rgba(52, 56, 56, 0.2);
+}
+#btn, #btn * {
+    will-change: transform;
+}
+#box {
+    will-change: transform, opacity;
+}
+
     /*------*/
     
     /*Burger menu*/
     
-    .header-burger_menu {
-        display: none;
- 
-    }
-
- 
-
-
-    
-    
    
-    
- 
     
 
 
@@ -256,7 +278,63 @@ label{
 }
 
 /*----------------------------------------------------------*/
-
+@media screen and (max-width: 425px){
+    #box {
+        position: fixed;
+        z-index: 4;
+        overflow: auto;
+        top: 0px;
+        left: -275px;
+        width: 100%;
+        opacity: 0;
+        padding: 20px 0px;
+        height: 100%;
+        background-color: #f6f6f6;
+        color: #343838;
+        transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    }
+    #btn.active{
+        left: 340px;
+    }
+}
+@media screen and (max-width: 375px){
+    #box {
+        position: fixed;
+        z-index: 4;
+        overflow: auto;
+        top: 0px;
+        left: -275px;
+        width: 100%;
+        opacity: 0;
+        padding: 20px 0px;
+        height: 100%;
+        background-color: #f6f6f6;
+        color: #343838;
+        transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    }
+    #btn.active{
+        left: 320px;
+    }
+}
+@media screen and (max-width: 375px){
+    #box {
+        position: fixed;
+        z-index: 4;
+        overflow: auto;
+        top: 0px;
+        left: -275px;
+        width: 100%;
+        opacity: 0;
+        padding: 20px 0px;
+        height: 100%;
+        background-color: #f6f6f6;
+        color: #343838;
+        transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    }
+    #btn.active{
+        left: 280px;
+    }
+}
 @media screen and (min-width: 375px) {
      
         .modal__content{
