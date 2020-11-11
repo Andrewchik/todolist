@@ -2,7 +2,7 @@
 ////////////////////////////////////Burger menu////////////////////////////////////////////
 const sidebarBox = document.querySelector('#box'),
 sidebarBtn = document.querySelector('#btn'),
-pageWrapper = document.querySelector('.expence_tracer');
+pageWrapper = document.querySelector('.expense_tracer');
 
 sidebarBtn.addEventListener('click', event => {
 sidebarBtn.classList.toggle('active');

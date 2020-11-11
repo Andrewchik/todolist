@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-        <div id="btn">
+    <h1 class="header-logo_name ml-5">Expense Tracker</h1>
+    <nav>
+        <div id="btn" >
             <div id='top'></div>
             <div id='middle'></div>
             <div id='bottom'></div>
@@ -24,10 +26,38 @@
                     <a href = "#" class="item">Menu 5</a>
             </div>
     </div>
-    <h1 class="header-logo_name">Expence Tracker</h1>
+ 
+    </nav>
     </header>
-    <div class="expence_tracer">
-        
+    <hr>
+    <div class="expense_tracer">
+        <div class="container">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Name</span>
+                </div>
+                <input type="text" aria-label="Name" class="form-control" placeholder="Where was the expense made?">
+                <br/>
+              </div>
+              <hr>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Date</span>
+                </div>
+                <input type="date" aria-label="Date" class="form-control"  placeholder="dd/mm/yyyy">
+               
+            </div>
+            <hr>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Amonut</span>
+              </div>
+              <input type="number" aria-label="Amount" class="form-control"  placeholder="How much did you spend?">
+             
+          </div>
+          <hr>
+          <button type="button" class="btn btn-primary btn-lg">Add Expense</button>
+          </div>
     </div>
     
 

@@ -131,6 +131,16 @@ body {
 
 
     /*------------------Media-------------------*/
+
+    @media (max-width: 424px) {
+        .header-logo_name{
+            text-align: center;
+            font-size: 33px;
+            font-weight: 800;
+            margin-top: 5px;
+            
+        }
+    }
     @media screen and (max-width: 425px){
         #box {
             position: fixed;
