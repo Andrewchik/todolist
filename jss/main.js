@@ -128,32 +128,32 @@ setInterval(()=>{if(i<text.length){document.querySelectorAll('h1 span')[i].style
     })
 
 
-    ///////////////////////////////////////////==JQuery Burger Menu!////////////////////////////////////////////////////////////////////////
-
+    /////////////////////////////////////////// Burger Menu  !////////////////////////////////////////////////////////////////////////
     const sidebarBox = document.querySelector('#box'),
     sidebarBtn = document.querySelector('#btn'),
     pageWrapper = document.querySelector('.todo_list');
-
-sidebarBtn.addEventListener('click', event => {
+    
+    sidebarBtn.addEventListener('click', event => {
     sidebarBtn.classList.toggle('active');
     sidebarBox.classList.toggle('active');
-});
-
-pageWrapper.addEventListener('click', event => {
-
+    });
+    
+    pageWrapper.addEventListener('click', event => {
+    
     if (sidebarBox.classList.contains('active')) {
             sidebarBtn.classList.remove('active');
             sidebarBox.classList.remove('active');
     }
-});
-
-window.addEventListener('keydown', event => {
-
+    });
+    
+    window.addEventListener('keydown', event => {
+    
     if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
             sidebarBtn.classList.remove('active');
             sidebarBox.classList.remove('active');
     }
-});
+    });
+
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
