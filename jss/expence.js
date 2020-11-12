@@ -29,6 +29,6 @@ if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
 
 const addExp = document.querySelector('.addExp')
 
-addExp.addEventListener('click', () =>{
+// addExp.addEventListener('click', () =>{
         
-})
+// })
