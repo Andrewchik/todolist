@@ -19,7 +19,7 @@ body {
     
     
 #btn {
-    position: fixed;
+    position: absolute;
     z-index: 5;
     top: 15px;
     left: 15px;
@@ -37,6 +37,9 @@ body {
 }
 #btn.active {
     left: 230px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
 }
 #btn.active div {
     background-color: #343838;
