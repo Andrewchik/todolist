@@ -27,8 +27,33 @@ if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-const addExp = document.querySelector('.addExp')
+const addExp = document.querySelector('#addExp')
+let name = document.querySelector('#name')
+let date = document.querySelector('#date')
+let amount = document.querySelector('#amount')
+let expens_table = document.querySelector('.expens_table')
 
-// addExp.addEventListener('click', () =>{
-        
-// })
+
+
+let expenses = [] 
+
+addExp.addEventListener('click', () =>{
+        if (name.value == '' || date.value == '' || amount.value == '') {
+                alert('Введіть всі значення!')
+        } else {
+                let newExp = {
+                        name: name.value,
+                        date: new Date(date.value),
+                        amount: +amount.value
+                    };
+
+                    expenses.push(newExp)
+                    console.log(expenses);
+
+        }
+       
+})
+
+
+
+

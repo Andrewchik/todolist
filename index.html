@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <title>To Do List</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Home</title>
 </head>
 <body>
-    <header>
-           
-    <div class="container">
+    <div class="wrapper">
+
+   
+    <header class="header">
         <div class="burger">
             <div id="btn">
                 <div id='top'></div>
@@ -21,49 +20,51 @@
         <div id="box">
             
                 <div id="items">
-                        <a href =  "#"  class="item">Home</a>
-                        <a href =  "./index.html"  class="item">Todo List</a>
+                        <a href =  "./index.html"  class="item">Home</a>
+                        <a href =  "./todolist.html"  class="item">Todo List</a>
                         <a href =  "./expence.html"  class="item">Expence Tracer</a>
                         <a href =  "#"  class="item">Menu 4</a>
                         <a href = "#" class="item">Menu 5</a>
                 </div>
         </div>
         </div>
-           
-           
-            <div class="todo_list">
-                <h1>ToDoList by Android</h1>
-                <div id="date" class="dateStyle"></div>
-                <div class="create_new_todo">
-                    <input type="text" class="message" placeholder="Input your task...">
-                </div>
-                    <div class="buttons">
-                    <button class="add">ADD</button>
-                    <button class= "addNew" id="modalWin">NEW</button>
-                   </div>
-               
-               
-                <div class="wrapper">
-                    <ul class="todo"></ul>
-                </div>
-            </div>
-
-         
+        <div class="header_video">
+            <video loop muted autoplay>
+                <source  src="video/space.mp4" type = "video/mp4">
+                    <source  src="video/space.webm" type = "video/webm">
+            </video>
         </div>
-
-        <div class="modal">
-            <div class="modal__content">
-                <h2>Are you sure?</h2>
-                <p>Your previous ToDoList going to be destroyed :c</p>
-                    <button  id ="modalYes">Yes</button>
-                    <button id ="modalNo">No</button>
-                
-            </div>
+        <div class = "header_content">
+            <div class="header_title">Hi! It's my portfolio!</div>
+            <div class="header_text"></div>
+            <button class="header_lyst" id= "scrollDown"><span>About me</span></button>
         </div>
     </header>
-
-    <script src="./jss/main.js"></script>
-   
     
+
+    <div class="content">
+       <div class="content-biography" id = "about">
+           <div class="content-biography_photo">
+               <img src="./images/iam.jpg" alt="My photo">
+           </div>
+           <div class="content_biography__content">
+               <div class="content_biography__content_title"><h1>Andrew Goryachiy</h1></div>
+               <div class="content_biography__content_text">I create turnkey websites, web applications, landing pages including design and prototypes. To achieve client's goal I usually use Wordpress to simplify future site managing.
+
+                <br/>In addition I create logos, banners, illustrations, business cards etc. I work in Adobe Illustrator, Adobe Photoshop and Figma.
+                
+                <br/> Also I have a number of uncategorized projects and works, so I collect them in my Lab.
+                
+                <br/> Feel free to contact me, let's make great things together!
+                
+                 More information about me in my resume
+                
+                </div>
+           </div>
+       </div>
+    </div>
+</div>
+
+<script src="./jss/index.js"></script>
 </body>
 </html>

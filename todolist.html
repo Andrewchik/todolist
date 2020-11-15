@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>To Do List</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+           
+    <div class="container">
+        <div class="burger">
+            <div id="btn">
+                <div id='top'></div>
+                <div id='middle'></div>
+                <div id='bottom'></div>
+        </div>
+        <div id="box">
+            
+                <div id="items">
+                        <a href =  "./index.html"  class="item">Home</a>
+                        <a href =  "./todolist.html"  class="item">Todo List</a>
+                        <a href =  "./expence.html"  class="item">Expence Tracer</a>
+                        <a href =  "#"  class="item">Menu 4</a>
+                        <a href = "#" class="item">Menu 5</a>
+                </div>
+        </div>
+        </div>
+           
+           
+            <div class="todo_list">
+                <h1>ToDoList by Android</h1>
+                <div id="date" class="dateStyle"></div>
+                <div class="create_new_todo">
+                    <input type="text" class="message" placeholder="Input your task...">
+                </div>
+                    <div class="buttons">
+                    <button class="add">ADD</button>
+                    <button class= "addNew" id="modalWin">NEW</button>
+                   </div>
+               
+               
+                <div class="wrapper">
+                    <ul class="todo"></ul>
+                </div>
+            </div>
+
+         
+        </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                <h2>Are you sure?</h2>
+                <p>Your previous ToDoList going to be destroyed :c</p>
+                    <button  id ="modalYes">Yes</button>
+                    <button id ="modalNo">No</button>
+                
+            </div>
+        </div>
+    </header>
+
+    <script src="./jss/main.js"></script>
+   
+    
+</body>
+</html>

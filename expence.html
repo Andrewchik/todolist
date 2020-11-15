@@ -19,8 +19,8 @@
     <div id="box">
         
             <div id="items">
-                    <a href =  "#"  class="item">Home</a>
-                    <a href =  "./index.html"  class="item">Todo List</a>
+                    <a href =  "./index.html"  class="item">Home</a>
+                    <a href =  "./todolist.html"  class="item">Todo List</a>
                     <a href =  "./expence.html"  class="item">Expence Tracer</a>
                     <a href =  "#"  class="item">Menu 4</a>
                     <a href = "#" class="item">Menu 5</a>
@@ -36,7 +36,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">Name</span>
                 </div>
-                <input type="text" aria-label="Name" class="form-control" placeholder="Where was the expense made?">
+                <input type="text" id = "name" aria-label="Name" class="form-control" placeholder="Where was the expense made?">
                 <br/>
               </div>
               <hr>
@@ -44,7 +44,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">Date</span>
                 </div>
-                <input type="date" aria-label="Date" class="form-control"  placeholder="dd/mm/yyyy">
+                <input type="date" id = "date" aria-label="Date" class="form-control"  placeholder="dd/mm/yyyy">
                
             </div>
             <hr>
@@ -52,13 +52,17 @@
               <div class="input-group-prepend">
                 <span class="input-group-text">Amonut</span>
               </div>
-              <input type="number" aria-label="Amount" class="form-control"  placeholder="How much did you spend?">
+              <input type="number" id = "amount" aria-label="Amount" class="form-control"  placeholder="How much did you spend?">
              
           </div>
           <hr>
-          <button type="button" class="btn btn-primary btn-lg">Add Expense</button>
+          <button type="button" id = "addExp" class="btn btn-primary btn-lg">Add Expense</button>
           </div>
     </div>
+
+      <div class="wrapper">
+        <table class="expens_table"></table>
+      </div>
     <hr><hr><hr><hr>
     <div class="alert alert-danger" role="alert">
         Наразі сайт в розробці, кнопка <strong>"Add Expense"</strong> ще не працює!
